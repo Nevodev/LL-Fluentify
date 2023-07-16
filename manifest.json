@@ -1,0 +1,19 @@
+{
+    "manifest_version": 1,
+    "type": "theme",
+    "name": "Fluentify",
+    "slug": "fluentify_nev",
+    "description": "为 右键菜单/表情面板 添加真亚克力模糊，同时修复二级菜单漂移的问题。",
+    "version": "0.0.1",
+    "author": [
+        {
+            "name": "Nevdev",
+            "link": "https://github.com/Nevodev"
+        }
+    ],
+    "injects": {
+        "renderer": "./renderer.js",
+        "main": "./main.js",
+        "preload": "./preload.js"
+    }
+}
