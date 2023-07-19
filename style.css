@@ -83,7 +83,7 @@
 }
 
 /* 表情 */
-.sticker-panel {
+.message-panel .sticker-panel {
     /*light acrylic*/
     backdrop-filter: blur(32px) url('data:image/svg+xml,\ <svg xmlns="http://www.w3.org/2000/svg">\ <filter id="acrylic">\ <feColorMatrix values="0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.850  0.000" result="lumi" />\ <feBlend in="lumi" in2="SourceGraphic" mode="luminosity" result="f1" />\ <feColorMatrix in="SourceGraphic" values="0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.000  0.988\ 0.000  0.000  0.000  0.000  0.000" result="tint" />\ <feBlend in="tint" in2="f1" mode="color" />\ </filter>\ </svg>#acrylic') !important;
     /*light acrylic*/
@@ -96,7 +96,7 @@
     max-width: 416px !important;
 }
 
-.sticker-panel::before {
+.message-panel .sticker-panel::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -201,6 +201,17 @@
     z-index: -1;
 }
 
+/* 修复查看图片菜单颜色错误 */
+.q-theme-tokens-dark.q-context-menu {
+  background: #00000000 !important;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.15) !important;
+  border: solid 1.5px rgba(117, 117, 117, 0.2) !important;
+}
+.q-theme-tokens-dark.q-context-menu::before {
+  backdrop-filter: blur(24px)
+    url('data:image/svg+xml,\ <svg xmlns="http://www.w3.org/2000/svg">\ <filter id="acrylic">\ <feColorMatrix values="0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.960  0.000" result="lumi" />\ <feBlend in="lumi" in2="SourceGraphic" mode="luminosity" result="f1" />\ <feColorMatrix in="SourceGraphic" values="0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.150  0.000" result="tint" />\ <feBlend in="tint" in2="f1" mode="color" />\ </filter>\ </svg>#acrylic') !important;
+}
+
 @media (prefers-color-scheme: dark) {
 
     /* 上下文菜单 */
@@ -228,7 +239,7 @@
     }
 
     /* 表情 */
-    .sticker-panel {
+    .message-panel .sticker-panel {
         /* dark acrylic */
         backdrop-filter: blur(32px) url('data:image/svg+xml,\ <svg xmlns="http://www.w3.org/2000/svg">\ <filter id="acrylic">\ <feColorMatrix values="0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.960  0.000" result="lumi" />\ <feBlend in="lumi" in2="SourceGraphic" mode="luminosity" result="f1" />\ <feColorMatrix in="SourceGraphic" values="0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.000  0.172\ 0.000  0.000  0.000  0.150  0.000" result="tint" />\ <feBlend in="tint" in2="f1" mode="color" />\ </filter>\ </svg>#acrylic') !important;
         /* dark acrylic */
@@ -237,7 +248,7 @@
         background: #2c2c2c00 !important;
     }
 
-    .sticker-panel__divide {
+    .message-panel .sticker-panel__divide {
         background-color: rgba(255, 255, 255, 0.04) !important;
     }
 }
