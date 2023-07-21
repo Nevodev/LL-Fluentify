@@ -16,7 +16,3 @@
 **二级菜单不会漂移**
 
 ![Secondary Menus](https://github.com/Nevodev/LL-Fluentify/assets/51047891/d9ddf57b-e92e-4893-8f74-549631bca972)
-
-**整体预览 (May be NSFW)**
-
-![Preview](https://github.com/Nevodev/LL-Fluentify/assets/51047891/9e8ef66b-9a37-4f30-b248-92f90bfb0fad)
