@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "type": "extension",
+    "name": "Fluentify",
+    "slug": "fluentify_nev",
+    "description": "为 右键菜单/表情面板 添加真亚克力模糊。",
+    "version": "0.0.3",
+    "thumbnail": "./default_icon.png",
+    "author": {
+        "name": "Nevdev",
+        "link": "https://github.com/Nevodev"
+    },
+    "repository": {
+        "repo": "LL-Fluentify",
+        "branch": "main"
+    },
+    "platform": [
+        "win32",
+        "linux",
+        "darwin"
+    ],
+    "injects": {
+        "renderer": "./src/renderer.js",
+        "main": "./src/main.js",
+        "preload": "./src/preload.js"
+    }
+}
