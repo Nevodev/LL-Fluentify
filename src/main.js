@@ -23,7 +23,7 @@ function updateStyle(webContents) {
             return;
         }
         webContents.send(
-            "betterQQNT.fluentify_nev.updateStyle",
+            "LiteLoader.fluentify_nev.updateStyle",
             data
         );
     });
@@ -41,7 +41,7 @@ function watchCSSChange(webContents) {
 
 function onLoad(plugin) {
     ipcMain.on(
-        "betterQQNT.fluentify_nev.rendererReady",
+        "LiteLoader.fluentify_nev.rendererReady",
         (event, message) => {
             const window = BrowserWindow.fromWebContents(event.sender);
             updateStyle(window.webContents);
