@@ -12,7 +12,11 @@
     },
     "repository": {
         "repo": "Nevodev/LL-Fluentify",
-        "branch": "v3"
+        "branch": "v3",
+        "use_release": {
+            "tag": "0.0.4",
+            "name": "Fluentify-0.0.4.zip"
+        }
     },
     "platform": [
         "win32",
