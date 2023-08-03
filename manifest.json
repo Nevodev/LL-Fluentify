@@ -11,8 +11,8 @@
         "link": "https://github.com/Nevodev"
     },
     "repository": {
-        "repo": "LL-Fluentify",
-        "branch": "main"
+        "repo": "Nevodev/LL-Fluentify",
+        "branch": "0.0.3-v2"
     },
     "platform": [
         "win32",
