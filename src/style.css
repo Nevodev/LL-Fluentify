@@ -92,7 +92,7 @@
     background: rgba(255, 255, 255, 0) !important;
     border-radius: 8px !important;
     margin-bottom: 12px !important;
-    margin-left: 8px !important;
+    transform: translateX(8px);
 }
 
 .expression-panel-inner .sticker-panel::before {
@@ -121,7 +121,6 @@
 }
 
 .tabs-container-item {
-    margin-right: 6px !important;
     transition: background-color 0.2s cubic-bezier(0.2, 0.2, 0, 1) !important;
 }
 
