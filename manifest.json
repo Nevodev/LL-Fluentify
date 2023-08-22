@@ -4,7 +4,7 @@
     "name": "Fluentify",
     "slug": "fluentify_nev",
     "description": "为 右键菜单/表情面板 添加真亚克力模糊。",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "thumbnail": "./default_icon.png",
     "author": {
         "name": "Nevdev",
@@ -14,8 +14,8 @@
         "repo": "Nevodev/LL-Fluentify",
         "branch": "v3",
         "use_release": {
-            "tag": "0.0.4",
-            "name": "Fluentify-0.0.4.zip"
+            "tag": "0.0.5",
+            "name": "Fluentify-0.0.5.zip"
         }
     },
     "platform": [
